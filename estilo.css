@@ -1,0 +1,371 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+.fondo1{
+    background-image: url(imagenes/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid1{
+    width: 90%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+.titulo{
+    grid-column: 1/7;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-weight: 600;
+    font-size: 50px;
+
+}
+.titulo--justif{
+    text-align: justify;
+}
+.frase{
+    grid-column: 7/13;
+    display: flex;
+    align-items:flex-end;
+    padding-bottom: 50px;
+}
+
+.redes{
+    position: fixed;
+    top: 40%;
+    right: 20px;
+}
+.item{
+    padding: 20px 0;
+    color: aliceblue;
+
+}
+.item a{
+    color: white;
+}
+.grid2{
+    width: 60%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    text-align:center;
+    margin: auto 0 auto auto;
+
+}
+.fondo2{
+    background-image: url(imagenes/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.items--nav{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+}
+.items--dis{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.item-1{
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px 30px;
+    background-color: rgba(255, 4, 4, 0.493);
+    transition: all 1s;
+}
+.item-1:hover{
+    transform: scale(1.5);
+}
+.item-1 a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.pie{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(252, 0, 0, 0.493);
+}
+.pie p {
+    color:white;
+    font-size: 20px;
+
+}
+/* Acerca de mi */
+.grid3{
+    width: 90%;
+    height: 90vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    margin: auto;
+}
+.fondo--acerca_de_mi{
+    background-image: url(imagenes/imagen\ Acerda\ de\ mi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.cabecera-arcedaDeMi{
+    grid-column: 1/-1;
+}
+.cabecera__titulo{
+    font-size: 50px;
+    padding-top: 125px;
+    padding-bottom: 70px;
+}
+.acercaDeMi{
+    background-color: rgba(0, 0, 0, 0.39);
+
+}
+.volver{
+    position: fixed;
+    left: 0;
+    color: red;
+    top: 0;
+}
+.volver a{
+    color :black
+}
+.volver a:hover{
+    color:  rgb(255, 255, 255);
+}
+/* articulos */
+.fondo-ar{
+    background-image: url(imagenes/articulos111.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid4{
+    width: 89%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 20vh 70vh;
+    margin: auto;
+    text-align: center;
+}
+.cabecera{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-ar{
+    color: rgba(0, 0, 0, 0.884);
+}
+.nav-articulos{
+    grid-column: 1/-1;
+}
+.articulos{
+    background-color: rgb(0, 0, 0);
+}
+.items-articulos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-left: 50px;
+}
+.item-ar{
+    display:block;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.295);
+    transition: all 1s;
+}
+.item-ar:hover{
+    transform: scale(1.5);
+    padding: 2px;
+}
+.item-ar a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}
+/* articulo  */
+.arriba{
+    position: fixed;
+    bottom:10%;
+    right: 20px;
+}
+.arriba a{
+    text-decoration: none;
+    color: black;
+    transition: all 1s;
+}
+.arriba:hover{
+    transform: scale(1.5);
+
+}
+.fondo-ar-veggies{
+    background-image: url(imagenes/articulos/veggies/veggies.jpg);
+    background-size: cover;
+    background-position: right;
+
+}
+.veggies-titulo{
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 10px;
+    padding: 20px;
+}
+.items-articulos{
+    grid-column: 7/13;
+}
+.medidas{
+    width: 100%;
+    height: 100%;
+}
+.flex-articulos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex-articulos li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.articulos-ar{
+    background-color: rgba(255, 255, 255, 0.397);
+    color: white;
+    padding: 10px;
+    transition: all 1s;
+    border-radius: 5px;
+}
+.articulos-ar:hover{
+    transform: scale(1.5);
+}
+.titulo-articulo-ar{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 5, 1);
+}
+.titulo-articulo-ar h3{
+    font-size: 50px;
+    color:white;
+}
+
+.parrafo-ar1{
+    grid-column: 1/-1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo-ar2{
+    grid-column: 1/8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ar-img{
+    grid-column: 8/-1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.img{
+    width: 90%;
+
+}
+.grid-final-pagina{
+    width: 90%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+
+}
+/* RECETAS */
+.fondo-re{
+    background-image: url(imagenes/recetasdecomida.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* turnos */
+.grid-turno{
+    display: grid;
+    grid-template-columns: repeat(12,ifr);
+    grid-template-rows: 15vh 5vh 65vh 5vh;
+}
+.titulo-tu{
+    grid-column: 1/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.titulo-tu h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;    
+}
+.titulo-tu-paso{
+    grid-column: 1/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-temas{
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titulo-fecha{
+    grid-column: 7/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siguiente{
+    grid-column: 1/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siguiente a{
+    border: 2px rgba(0, 0, 0, 0.589) solid;
+    padding: 5px 10px ;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+.footer-turno{
+    background-color: black;
+}
+/* media queri */
